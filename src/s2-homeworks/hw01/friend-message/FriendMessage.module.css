@@ -19,7 +19,6 @@
     border: 0px solid;
     border-radius: 50%;
     order: 1;
-    margin-left: 390px;
 }
 
 .friendText {
@@ -64,7 +63,7 @@
 
 .friendTime {
     align-self: start;
-    margin-left: 400px;
+    margin-left: 10px;
     font-weight: 600;
     font-size: 10px;
     line-height: 12px;
