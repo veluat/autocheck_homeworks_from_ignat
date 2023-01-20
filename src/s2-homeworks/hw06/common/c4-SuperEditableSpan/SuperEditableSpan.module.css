@@ -1,7 +1,12 @@
 .spanBlock {
+    display: inline-block;
+
+    height: 31px;
+    padding-top: 10px;
 }
 
 .span {
+
 }
 
 .input {
