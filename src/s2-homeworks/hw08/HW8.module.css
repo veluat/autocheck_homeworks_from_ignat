@@ -7,13 +7,14 @@
 }
 
 .users {
-border-bottom: #E5E5E5;
+    border-bottom: #E5E5E5;
     width: 306px;
     height: 1px;
 }
 
 .buttonsContainer {
     display: flex;
+    gap: 24px;
     align-items: center;
     margin: 20px 0 20px 100px;
     padding-right: 30px;
