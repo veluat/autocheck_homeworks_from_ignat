@@ -3,7 +3,7 @@
 }
 
 .hw {
-    margin: 10px 0 0 0;
+    margin: 25px 0 0 0;
     border: 1px solid #d8d7d7;
 
 
@@ -12,5 +12,5 @@
 .hwTitle {
     font-size: 25px;
     font-weight: bold;
-    margin: 25px 0 10px 0;
+    margin: 35px 0 10px 0;
 }
