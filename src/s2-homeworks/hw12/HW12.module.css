@@ -25,3 +25,14 @@ html {
     border: 1px solid #323232;
     border-radius: 2px;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    font-family: 'Montserrat', Arial, serif;
+    font-size: 14px;
+    font-weight: normal;
+}

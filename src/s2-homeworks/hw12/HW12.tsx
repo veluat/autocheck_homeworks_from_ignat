@@ -39,13 +39,16 @@ const HW12 = () => {
             </div>
 
             <div className={s2.hw}>
-                <SuperSelect
-                    id={'hw12-select-theme'}
-                    className={s.select}
-                    // сделать переключение тем
-                    options={themes}
-                    onChangeOption={change}
-                />
+                <div className={s.container}>
+                    <span className={s.text}>Выберите тему:</span>
+                    <SuperSelect
+                        id={'hw12-select-theme'}
+                        className={s.select}
+                        // сделать переключение тем
+                        options={themes}
+                        onChangeOption={change}
+                    />
+                </div>
             </div>
         </div>
     )
