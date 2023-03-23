@@ -19,5 +19,16 @@ html {
 }
 
 .select {
+    margin: 20px 0 10px 0;
+    width: 171px;
+    height: 36px;
+    border: 1px solid #323232;
+    border-radius: 2px;
+}
 
+.text {
+    font-family: 'Montserrat', Arial, monospace ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
 }
