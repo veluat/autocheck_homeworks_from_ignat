@@ -2,18 +2,30 @@
 }
 
 .input {
+    border: 1px solid #0066CC;
+    border-radius: 2px;
+    Width: 468px;
+    Height: 36px;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    font-family: Roboto, "Roboto Light", sans-serif;
 }
 
 .inputWrapper {
+
 }
 
 .superInput {
+
 }
 
 .errorInput {
+
 }
 
 .errorInput:focus {
+
 }
 
 .error {
