@@ -48,9 +48,6 @@ const HW14 = () => {
         // делает студент
         setSearchParams(value)
         // добавить/заменить значение в квери урла
-        // setSearchParams(
-
-        //
     }
 
     useEffect(() => {
@@ -76,7 +73,6 @@ const HW14 = () => {
                     onChangeText={onChangeText}
                     onDebouncedChange={sendQuery}
                 />
-
                 <div id={'hw14-loading'} className={s.loading}>
                     {isLoading ? '...ищем' : <br/>}
                 </div>

@@ -1,7 +1,26 @@
 .tech {
+    Width: 32px;
+    Height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    font-family: Roboto, "Roboto Light", sans-serif;
 
 }
 
 .loading {
-
+    height: 16px;
+    width: 47px;
+    color: #4D4D4D;
+    font-family: Roboto, "Roboto Light", sans-serif;
+    font-weight: 300;
+    margin-left: 491px;
+    font-size: 14px;
 }
+/*
+
+.inputSuper {
+    border: #0066CC 1px solid ;
+    Width: 468px;
+    Height: 36px;
+}*/
