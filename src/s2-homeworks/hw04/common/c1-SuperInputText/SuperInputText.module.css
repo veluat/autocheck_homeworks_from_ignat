@@ -1,15 +1,14 @@
+
 .input:focus {
+    border: 1px solid #3d3dce;
 }
 
 .input {
-    border: 1px solid #0066CC;
-    border-radius: 2px;
-    Width: 468px;
-    Height: 36px;
-    font-size: 16px;
-    font-weight: 400;
-    color: black;
-    font-family: Roboto, "Roboto Light", sans-serif;
+    width: 468px;
+    height: 36px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .inputWrapper {
@@ -17,16 +16,19 @@
 }
 
 .superInput {
-
+    border: 1px solid #5454c1;
 }
 
 .errorInput {
-
+    border: 1px solid #CC1439;
 }
 
 .errorInput:focus {
-
+    border: 2px solid #CC1439;
 }
 
 .error {
+    color: #CC1439;
 }
+
+
