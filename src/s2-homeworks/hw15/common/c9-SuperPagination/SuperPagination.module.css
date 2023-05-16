@@ -1,11 +1,25 @@
 .pagination {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 600px;
+    padding: 10px;
+    margin-bottom: 36px;
 }
 
 .text1 {
-
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    padding-right: 8px;
+    color: #0D0B0C;
 }
 
 .text2 {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    padding-left: 8px;
+    color: #0D0B0C;
 
 }

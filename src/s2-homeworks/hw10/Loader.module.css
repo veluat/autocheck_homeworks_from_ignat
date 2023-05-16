@@ -1,6 +1,23 @@
-.loader img {
+.loader {
     width: 90px;
     height: 90px;
     margin: 9px 0 0 9px;
-    /*свг и/или анимация*/
+    border: 9px solid #FFFFFF;
+    border-top: 9px solid #0066CC;
+    border-radius: 9999px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
