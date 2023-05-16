@@ -53,9 +53,9 @@ const HW15 = () => {
         getTechs(params)
             .then((res) => {
                 if (res) {
-                    setTechs(res.data.techs)
-                    setTotalCount(res.data.totalCount)
-                    setLoading(false)
+                    setTotalCount(res.data.totalCount);
+                    setTechs(res.data.techs);
+                    setLoading(false);
                 }
             })
     };
@@ -64,16 +64,16 @@ const HW15 = () => {
         // делает студент
         setPage(newPage)
         setCount(newCount)
-        sendQuery({page: newPage, count: newCount, sort})
-        setSearchParams({page: newPage.toString(), count: newCount.toString()})
+        sendQuery({page: newPage, count: newCount, sort: sort})
+        setSearchParams({page: newPage.toString(), count: newCount.toString(), sort: sort})
     };
 
     const onChangeSort = (newSort: string) => {
         // делает студент
         setSort(newSort)
         setPage(1)
-        sendQuery({page, count, sort: newSort})
-        setSearchParams({page: page.toString(), count: count.toString(), sort: newSort})
+        sendQuery({page: page, count: count, sort: newSort})
+       setSearchParams({page: page.toString(), count: count.toString(), sort: newSort})
     }
 
     useEffect(() => {
@@ -103,7 +103,7 @@ const HW15 = () => {
                     {idLoading && <div id={'hw15-loading'} className={s.loading}><Loader/></div>}
 
                     <SuperPagination
-                        page={page}
+                        page={page} // текущая страница
                         itemsCountForPage={count}
                         totalCount={totalCount}
                         onChange={onChangePagination}

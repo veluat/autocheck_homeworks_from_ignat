@@ -24,7 +24,7 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
 
     const onChangeSelect = (event: ChangeEvent<HTMLSelectElement>) => {
         // пишет студент
-        onChange(page, +event.currentTarget.value);
+        onChange(page, +event)
     }
 
     return (
@@ -32,7 +32,7 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
             <Pagination
                 id={id + '-pagination'}
                 sx={{
-                    marginRight: '20px',
+                    marginRight: '20px'
                     // стили для Pagination // пишет студент
                 }}
                 color={"primary"}
@@ -49,7 +49,7 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
             </span>
 
             <SuperSelect
-                style={{width: '40px', height: '32px'}}
+                style={{width: '40px', height: '32px', borderColor: '#E5E5E5'}}
                 id={id + '-pagination-select'}
                 value={itemsCountForPage}
                 options={[
@@ -57,7 +57,7 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
                     {id: 7, value: 7},
                     {id: 10, value: 10},
                 ]}
-                onChange={onChangeSelect}
+                onChangeOption={onChangeSelect}
             />
 
             <span className={s.text2}>
