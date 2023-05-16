@@ -53,9 +53,13 @@
 .row {
     display: flex;
     width: 606px;
+    height: auto;
     border-bottom: 1px solid #E5E5E5;
 }
 
+.row:nth-last-child(-n+1) {
+    border: none;
+}
 
 .rowHeader {
     display: flex;

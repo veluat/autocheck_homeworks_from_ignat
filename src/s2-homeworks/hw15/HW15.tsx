@@ -53,20 +53,19 @@ const HW15 = () => {
         getTechs(params)
             .then((res) => {
                 if (res) {
-                    setTotalCount(res.data.totalCount);
-                    setTechs(res.data.techs);
-                    setLoading(false);
+                    setTechs(res.data.techs)
+                    setTotalCount(res.data.totalCount)
+                    setLoading(false)
                 }
-            });
+            })
     };
 
     const onChangePagination = (newPage: number, newCount: number) => {
         // делает студент
-
         setPage(newPage)
         setCount(newCount)
         sendQuery({page: newPage, count: newCount, sort})
-        setSearchParams(`page=${newPage}&count=${newCount}sort=${sort}`)
+        setSearchParams({page: newPage.toString(), count: newCount.toString()})
     };
 
     const onChangeSort = (newSort: string) => {
@@ -74,27 +73,26 @@ const HW15 = () => {
         setSort(newSort)
         setPage(1)
         sendQuery({page, count, sort: newSort})
-        setSearchParams(`page=${page}&count=${count}sort=${newSort}`)
+        setSearchParams({page: page.toString(), count: count.toString(), sort: newSort})
     }
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
-        sendQuery({page: params.page, count: params.count})
-        setPage(+params.page || 1)
-        setCount(+params.count || 4)
+        sendQuery({page: params.page, count: params.count});
+        setPage(+params.page || 1);
+        setCount(+params.count || 4);
     }, [])
 
     const mappedTechs = techs.map(t => (
         <div key={t.id} className={s.row}>
-            <div id={'hw15-tech-' + t.id} className={s.tech}>
+            <div id={"hw15-tech-" + t.id} className={s.tech}>
                 {t.tech}
             </div>
-
-            <div id={'hw15-developer-' + t.id} className={s.developer}>
+            <div id={"hw15-developer-" + t.id} className={s.developer}>
                 {t.developer}
             </div>
         </div>
-    ))
+    ));
 
     return (
         <div id={'hw15'}>
